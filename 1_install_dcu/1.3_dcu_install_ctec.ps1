@@ -2,13 +2,13 @@
 # Description: This script uninstalls existing Dell Command Update installations and then installs Dell Command Update using the latest installer from the specified URL. It includes error handling, logging, retry logic, and checksum verification.
 
 # User editable variables
-$installerUrl = "https://dfwmsp.com/RMS/DCU_Setup.exe"
-$installerPath = "C:\Celeratec\Installers\DCU_Setup.exe"
-$logFilePath = "C:\Celeratec\Logs\DCUSetup.log"
+$installerUrl = "insert download link here"
+$installerPath = "insert installer path here"
+$logFilePath = "insert logfile path here"
 $retryCount = 3
 $retryDelay = 5  # in seconds
-$uninstallLogPath = "C:\Celeratec\Logs"
-$knownChecksum = "c0e844e1cdca160c21eeb3f8d30813d337e0e3aeb27b82aca201811df77a5d5f"
+$uninstallLogPath = "insert logfile path here"
+$knownChecksum = "insert checksum"
 
 # Function to log messages
 function Log-Message {
