@@ -13,6 +13,7 @@ This repository contains scripts and configurations for automating the deploymen
 - `1_dcu_install_url.ps1`: This script has been lightly tested. It first checks to see if DCU is already installed and then uninstalls it if it is detected. The script uses the download URL of the Command Update installer for the most recent version of Dell Command Update as of 5/24/2024
 - `1.1_dcu_install_s3.ps1`: This script has not been tested, however it is nearly identical in functionality to the first and tested functional installation script. The script is configured to take a link to an installer stored in an AWS S3 bucket instead of pulling from the Dell website
 - `1.2_dcu_install_winget.ps1`: This script has been tested and is currently non-operational. There is an existing winget command to install command update but for an unknown reason it is very tricky to get working
+- `1.3_dcu_install_ctec.ps1`: This script is specifically designed for our in-house requirements, downloads a known good copy for our public server and has been tested and is currently fully ooperational.
 
 ### Part 2 Configuring Dell Command | Update
 
